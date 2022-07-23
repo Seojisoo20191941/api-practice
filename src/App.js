@@ -1,8 +1,9 @@
 import React from "react";
 import "./App.css";
 // import { Fragment } from "react";
-import Box from "./Box";
+// import Box from "./Box";
 import styled from "styled-components";
+import BoxAxios from "./BoxAxios";
 
 const StyledApp = styled.div`
   display: flex;
@@ -17,7 +18,8 @@ const App = () => {
     <StyledApp>
       <StyledCard>
         <h3>인기중고</h3>
-        <Box />
+        <BoxAxios />
+        {/* <Box /> */}
       </StyledCard>
     </StyledApp>
   );
