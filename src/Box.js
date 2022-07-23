@@ -28,20 +28,20 @@ const Box = () => {
         setProducts(data);
       });
   }, []);
-
+  console.log(products);
   return (
     <>
       {products &&
         products.map((product) => (
           <StyledBox key={product.id}>
             <img src={product.img} alt="#"></img>
-            <text>
+            <div>
               <p>
                 <b>{product.title}</b>
               </p>
               <p className="address">{product.address}</p>
               <p className="price">{product.price}</p>
-            </text>
+            </div>
           </StyledBox>
         ))}
     </>
